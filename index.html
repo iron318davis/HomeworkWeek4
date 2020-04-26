@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center>Javascript Quiz</center>
+        </h1>
+    </header>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col text-left HighScores"><a href="./HighScores.html">High Scores</a></div>
+            <div class="col text-right" id="Timer">Time Remaining: 15</div>
+        </div>
+            </br>
+        <div class="row text-center">
+            <button type="button" class="btn btn-primary" id="Start">Start</button>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-auto" id = "Question">Question</div>
+        </div>
+
+        <button type="button" class="btn btn-dark" id="Button1">Dark</button>
+        </br>
+        <button type="button" class="btn btn-dark" id="Button2">Dark</button>
+        </br>
+        <button type="button" class="btn btn-dark" id="Button3">Dark</button>
+        </br>
+        <button type="button" class="btn btn-dark" id="Button4">Dark</button>
+        <div class="row text-center">
+            <h2 id="YourScore">Your Score:</h2>
+        </div>
+        <div class="Initials">
+            <form id="EnterInitials" method="POST">
+              <label for="EnterYourInitials">Enter Your Initials:</label>
+              <input type="text" placeholder="Initials" name="EnterYourInitials" id="EnterYourInitials" />
+              <button class="btn btn-success" id="submit">Submit and view scores</button>
+            </form>
+          </div>
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
